@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Phone, MapPin, Send, Shield, Clock, Globe } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Shield, Clock, Globe, MessageCircle } from "lucide-react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -156,6 +156,16 @@ const Contact = () => {
                   <div>
                     <div className="font-medium text-foreground">Location</div>
                     <div className="text-cyber-blue">Secure Facility, Global Operations</div>
+                  </div>
+                </div>
+                
+                <div className="flex items-center space-x-4">
+                  <div className="w-10 h-10 bg-gradient-cyber rounded-lg flex items-center justify-center">
+                    <MessageCircle className="w-5 h-5 text-background" />
+                  </div>
+                  <div>
+                    <div className="font-medium text-foreground">WhatsApp</div>
+                    <div className="text-cyber-blue">+1 (555) 987-6543</div>
                   </div>
                 </div>
               </CardContent>
